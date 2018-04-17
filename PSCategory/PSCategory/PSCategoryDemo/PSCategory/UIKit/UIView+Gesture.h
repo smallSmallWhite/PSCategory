@@ -11,7 +11,6 @@
 @interface UIView (Gesture)
 
 
-
 + (void)addTapToView:(UIView *_Nullable)view
           withTarget:(UIView *_Nullable)target
              withTag:(NSInteger)tag
