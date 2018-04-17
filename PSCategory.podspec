@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'PSCategory'
-s.version      = '0.0.3'
+s.version      = '0.0.4'
 s.summary      = '项目中自用的类目'
 s.description  = <<-DESC
 项目中常用的类目
@@ -22,8 +22,10 @@ s.author             = { "smallSmallWhite" => "mapeng@xinshiwi.com" }
 s.platform     = :ios
 s.platform     = :ios, '9.0'
 
-s.source       = { :git => "https://github.com/smallSmallWhite/PSCategory.git", :tag => '0.0.3' }
+s.source       = { :git => "https://github.com/smallSmallWhite/PSCategory.git", :tag => '0.0.4' }
+s.source_files  = 'Classes','PSCategory/PSCategoryDemo/PSCategory/**/*.{h,m}'
+s.exclude_files = "Classes/Exclude"
+s.public_header_files = "PSCategory/PSCategoryDemo/PSCategory/PSPrefixHeader.h","PSCategory/PSCategoryDemo/PSCategory/**/*.h"
 
-s.source_files  = 'PSCategory'
 
 end
